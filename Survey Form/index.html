@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="main">
+        <h1 id="title">Book Buddy Survey Form</h1>
+        <p id="description">Help us choose your book buddy by filling out this survery form</p>
+    </div>
+    <form id="survey-form">
+        <div class="form-control">
+            <label class="name" id="name-label">Name
+                <input id="name" type="text" name="name" required placeholder="Enter your name">
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label class="email" id="email-label">Email
+                <input id="email" type="email" name="email" required placeholder="Enter your email">
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label class="age" id="number-label">Age
+                <input id="number" type="number" name="age" placeholder="Enter your age" min="8" max="11">
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label class="genre">What is your favorite genre?
+                <select id="dropdown" name="dropdown">
+                    <option value="option">Select an option</option>
+                    <option vaule="fiction">General Fiction</option>
+                    <option value="nonfiction">Nonfiction</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="romance">Romance</option>
+                    <option value="fantasy-fiction">Fantasy Fiction</option>
+                    <option value="historical-fiction">Historical Fiction</option>
+                    <option value="poetry">Poetry</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>How much freetime during the day do you have to read?
+                <label for="time-1">
+                    <input type="radio" id="time-1" value="button" name="time">30 minutes
+                </label>
+                <label for="time-2">
+                    <input type="radio" id="time-2" value="button" name="time">1 hour
+                </label>
+                <label for="time-3">
+                    <input type="radio" id="time-3" value="button" name="time">2 hours
+                </label>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label> Have you read any of these books?
+                <small>(Check all that apply)</small>
+                <label for="inp-1">
+                    <input type="checkbox" value="button" name="inp">Harry Potter
+                </label>
+                <label>
+                    <input type="checkbox" value="button" name="inp">Percy Jackson
+                </label>
+                <label>
+                    <input type="checkbox" value="button" name="inp">Diary of a Wimpy Kid
+                </label>
+                <label>
+                    <input type="checkbox" value="button" name="inp">Pride and Prejudice
+                </label>
+                <label>
+                    <input type="checkbox" value="button" name="inp">Divergent
+                </label>
+                <label>
+                    <input type="checkbox" value="button" name="inp">Hunger Games
+                </label>
+                <label>
+                    <input type="checkbox" value="button" name="inp">Twilight
+                </label>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Any books that you would like to read with your book buddy?
+                <textarea placeholder="Enter your comment here..." name="comment" id="comment"></textarea>
+            </label>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+</html>
