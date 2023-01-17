@@ -1,0 +1,84 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-image: url(https://thumbs.dreamstime.com/b/vector-illustration-seamless-book-pattern-background-wallpaper-30298316.jpg); 
+    text-align:center;
+}
+
+.main {
+    background-color: burlywood;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px auto;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:40px;
+}
+
+p {
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+form {
+    background-color:burlywood;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.5)
+}
+
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+
+}
+
+button {
+    background-color: lightskyblue;
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 21px;
+    display:block;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+@media(max-width:700px) {
+    .form-control, h1, p, .main {
+        float:none;
+        text-align:center;
+        width:100%;
+    }
+}
